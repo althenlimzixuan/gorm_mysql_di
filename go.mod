@@ -3,6 +3,7 @@ module github.com/althenlimzixuan/gorm_mysql_di
 go 1.19
 
 require (
+	github.com/joho/godotenv v1.4.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/sirupsen/logrus v1.9.0
 	gorm.io/driver/mysql v1.4.1
