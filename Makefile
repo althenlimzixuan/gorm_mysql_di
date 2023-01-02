@@ -10,7 +10,8 @@ init_go_project:
 init_essential_library:
 	go get -v "github.com/google/wire/cmd/wire@latest" \
 	"github.com/kelseyhightower/envconfig" \
-	"github.com/sirupsen/logrus"
+	"github.com/sirupsen/logrus" \
+	"github.com/joho/godotenv"
 
 init_library_project_dir:
 	mkdir app
