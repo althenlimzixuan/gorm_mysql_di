@@ -1,4 +1,5 @@
 package config
+
 var ConfigHeader = "GORM_MYSQL"
 
 type GormMySqlConfig struct {

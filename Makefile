@@ -8,10 +8,12 @@ init_go_project:
 	go mod init ${GO_PACKAGE_NAME}	
 
 init_essential_library:
-	go get -v "github.com/google/wire/cmd/wire@latest" \
-	"github.com/kelseyhightower/envconfig" \
-	"github.com/sirupsen/logrus" \
-	"github.com/joho/godotenv"
+	go install github.com/vektra/mockery/v2@latest && \
+	go install github.com/google/wire/cmd/wire@latest && \
+	go get -v github.com/google/wire/cmd/wire@latest && \
+	go get -v "github.com/google/wire/cmd/wire@latest" && \
+	go get -v "github.com/kelseyhightower/envconfig" && \
+	go get -v "github.com/sirupsen/logrus"
 
 init_library_project_dir:
 	mkdir app
